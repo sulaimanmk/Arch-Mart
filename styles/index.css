@@ -8,7 +8,8 @@ html, body {
   --color-blue: #179FBE;
   --color-grey1: #F2F6F7;
   --color-light-green: #CFDEDE;
-  --color-dark-green: #1A5765;
+  --color-light-green: #bdc8d7;
+  --color-dark-green: #0d4c9a;
   --color-green: #198C36;
   --color-grey2: #F2F6F7;
 }
@@ -45,8 +46,6 @@ p {
   height: 85px;
 }
 .header .header-left {
-  padding-top: 10px;
-  padding-left: 10px;
   height: 100%;
 }
 .header .header-left img {
@@ -156,6 +155,7 @@ p {
 .companies img {
   width: 100%;
   height: auto;
+  display: none;
 }
 
 .sec2 {
@@ -508,4 +508,22 @@ footer {
   visibility: visible;
   opacity: 1;
   transition: 0.5s;
+}
+
+@media screen and (max-width: 500px) {
+  body .wrapper {
+    align-items: center;
+    max-width: 500px;
+  }
+  body .wrapper .header {
+    position: relative;
+  }
+  body .sec1 .head1 .right-head1 img {
+    display: none;
+  }
+}
+@media screen and (max-width: 1280px) {
+  body {
+    max-width: 100%;
+  }
 }/*# sourceMappingURL=index.css.map */

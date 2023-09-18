@@ -13,7 +13,9 @@ html, body{
     --color-blue: #179FBE;
     --color-grey1: #F2F6F7;
     --color-light-green: #CFDEDE;
-    --color-dark-green: #1A5765;
+    --color-light-green: #bdc8d7;
+    --color-dark-green: #0d4c9a;
+    // --color-dark-green: royalblue;
     --color-green: #198C36;
     --color-grey2: #F2F6F7;
 }
@@ -48,8 +50,7 @@ p{
     justify-content: space-between;
     height: 85px;
     .header-left{
-        padding-top: 10px;
-        padding-left: 10px;
+        
         height: 100%;
         img{
             height: 100%;
@@ -172,6 +173,7 @@ p{
     img{
         width: 100%;
         height: auto;
+        display: none;
     }
 }
 
@@ -579,4 +581,6 @@ footer{
     opacity:1;
     transition: 0.5s;
 }
+
+@import '/styles/media';
 
