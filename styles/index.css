@@ -167,13 +167,19 @@ p {
   gap: 2em;
 }
 .sec2 .materials .material-item {
-  content: "";
-  height: 250px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
   background-color: white;
   border: 1px solid grey;
   border-radius: 15px;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+.sec2 .materials .material-item span {
+  font-weight: 500;
 }
 
 .sec3 .sec3-sec {
@@ -511,15 +517,21 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
-  body .wrapper {
+  .sec1 .head1 .right-head1 img {
+    display: none;
+  }
+  .container {
+    max-width: 500px;
+  }
+  .container h1 {
+    font-size: 15px;
+  }
+  .wrapper {
     align-items: center;
     max-width: 500px;
   }
-  body .wrapper .header {
+  .wrapper .header {
     position: relative;
-  }
-  body .sec1 .head1 .right-head1 img {
-    display: none;
   }
 }
 @media screen and (max-width: 1280px) {
