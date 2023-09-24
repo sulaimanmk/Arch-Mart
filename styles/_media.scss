@@ -1,7 +1,15 @@
-@media screen and (max-width: 500px){
+@media (max-width: 600px){
 
     .sec1{
         .head1{
+            gap: 0;
+            padding-left: 10px;
+            padding-right: 10px;
+
+            .left-head1{
+                text-align: center;
+                align-items: center;
+            }
             .right-head1{
                 img{
                     display: none;
@@ -10,9 +18,45 @@
         }
         
     }
-    
+
+    .sec3{
+        .sec3-sec{
+            align-items: center;
+            padding-left: 30px;
+
+            .left-content{
+                h2{
+                    font-size: 24px;
+                }
+            }
+            .right-content{
+                img{
+                    width: 245px;
+                    height: auto;
+                }
+            }
+           
+        }
+    }
+
+    .sec4{
+        .sec4-sec{
+            .upper-sec{
+                display: flex !important;
+                flex-direction: column;
+                gap: 2em !important;
+                margin-bottom: 30px;
+            }
+
+            .lower-sec{
+                display: flex !important;
+                flex-direction: column;
+            }
+        }
+    }
+
     .container{
-        max-width: 500px;
+        width: 100%;
         h1{
             font-size: 15px;
         }
@@ -20,12 +64,11 @@
         
 
     }
-    // body{
         
         
     .wrapper{
         align-items: center;
-        max-width: 500px;
+        width: 100%;
         .header{
             position: relative;
         }
@@ -33,31 +76,50 @@
         
 
     }
+
+    .materials{
+        display: flex !important;
+        // grid-template-columns: repeat(2, 1fr);
+        flex-direction: column;
+        padding: 10px;
+
+    }
         
-    //    //font-size: 32px;
-    // .wrapper{
-    //    // width: 500px;
-    //     height: auto;
-    // }
-    // .header{
-    //    // width: fit-content;
-    //     gap: 1em;
-    //     margin: 0;
-    // }
-
 }
 
 
-@media screen and (max-width: 860px){
+@media screen and (min-width: 600px) and (max-width: 1280px){
+    .wrapper{
+        width: 100% !important;
+    }
+
+    .container{
+        width: 100% !important;
+    }
+}
+@media screen and (max-width: 768px){
 
 }
-@media screen and (max-width: 1280px){
-    body{
-        max-width: 100%;
+@media screen and (min-width: 600px) and (max-width: 992px){
+    .wrapper{
+        width: 100%;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    .sec2{
+        .materials{
+            display: flex;
+            flex-flow: wrap;
+            place-content: center;
+            padding: 10px;
+        }
     }
 }
 
-@media screen and (max-width: 1420px){
+@media screen and (max-width: 1200px){
 
 }
 
