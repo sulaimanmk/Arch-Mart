@@ -23,7 +23,7 @@
         .sec3-sec{
             align-items: center;
             padding-left: 30px;
-
+            gap: 1em;
             .left-content{
                 h2{
                     font-size: 24px;
@@ -31,7 +31,7 @@
             }
             .right-content{
                 img{
-                    width: 245px;
+                    width: 100% !important;
                     height: auto;
                 }
             }
@@ -52,6 +52,17 @@
                 display: flex !important;
                 flex-direction: column;
             }
+        }
+    }
+
+    .sec5{
+        padding: 30px;
+        .sec5-sections{
+            flex-direction: column !important;
+            .sec-width{
+                width: auto;
+            }
+
         }
     }
 

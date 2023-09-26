@@ -532,12 +532,13 @@ footer {
   .sec3 .sec3-sec {
     align-items: center;
     padding-left: 30px;
+    gap: 1em;
   }
   .sec3 .sec3-sec .left-content h2 {
     font-size: 24px;
   }
   .sec3 .sec3-sec .right-content img {
-    width: 245px;
+    width: 100% !important;
     height: auto;
   }
   .sec4 .sec4-sec .upper-sec {
@@ -549,6 +550,15 @@ footer {
   .sec4 .sec4-sec .lower-sec {
     display: flex !important;
     flex-direction: column;
+  }
+  .sec5 {
+    padding: 30px;
+  }
+  .sec5 .sec5-sections {
+    flex-direction: column !important;
+  }
+  .sec5 .sec5-sections .sec-width {
+    width: auto;
   }
   .container {
     width: 100%;
